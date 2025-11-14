@@ -1,0 +1,64 @@
+Patient Observation Record
+Patient Information:
+   Patient Name: Mr. Ramesh Patel
+   Age/Gender: 52 years/male
+   MRN: 102456
+   Date of Visit: July 1st, 2025
+   Consulting Physician: Dr. Anjali Desai, Diabetologist
+Presenting Complaints:
+   Generalized fatigue
+   Increased thirst and urination
+   Blurred vision intermittently
+   Occasional tingling in feet
+History of Present Illness:
+   Type 2 diabetes diagnosed 5 years ago.
+   Previously on oral therapy with suboptimal control.
+   No recent hospitalizations.
+   Occasional dietary indiscretions reported.
+Past Medical History:
+   Hypertension x 8 years
+   Dyslipidemia x 5 years
+   No known C.D., no stroke
+   No history of diabetic foot ulcers
+Medications:
+   Current Rx:
+       Metformin 1000 mg twice daily
+       Glimepiride 2 mg once daily
+       Atorvastatin 20 mg once daily HS
+       Telmisartan 40 mg once daily
+Clinical Examination:
+   Weight: 82 kg
+   Height: 168 cm
+   BMI: 29.0 kg/m² (Overweight)
+   BP: 138/82 mmHg
+   Pulse: 78 per minute
+   Foot examination: Normal sensation, no ulcers
+   Eye examination: Mild non-proliferative diabetic retinopathy noted
+   Cardiovascular/Chest exam: Normal
+   Neurological exam: Mild peripheral sensory neuropathy in toes
+   take fiber as supplement
+Investigations Ordered (Lab Requisition):
+   Fasting blood glucose
+   Postprandial blood glucose
+   HbA1c
+   Serum creatinine
+   eGFR
+   Lipid profile
+   Urine microalbumin
+   TSH for hypothyroidism screen
+   Complete blood count
+   ECG screen for silent ischemia
+Assessment:
+   Type 2 diabetes mellitus with suboptimal glycemic control; HbA1c target not yet achieved.
+   Mild diabetic peripheral neuropathy.
+   Hypertension: Stable on current therapy.
+   Dyslipidemia: On statin therapy.
+Plan and New Prescription:
+   Medication Adjustments:
+       Switch from Glimepiride 2 mg OD to Glimepiride 4 mg OD.
+       Add Empagliflozin 10 mg once daily.
+   Lifestyle Advice:
+       Reinforce diet plan with reduced refined carbohydrates.
+       Encourage brisk walking at least 30 minutes daily.
+   Footcare Education: Reinforced.
+   Next Follow-up: 4 weeks with lab results.

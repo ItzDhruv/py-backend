@@ -1,0 +1,80 @@
+Results
+Corrected Transcription:
+ Patient Observation Record
+ Patient Information
+ Name: Sarah Johnson
+ Date of Birth: July 12, 1978
+ Age: 47 years
+ Gender: Female
+ Contact Number: +1-555-234-5678
+ Address: 987 Pine Street, Dallas, TX 75201
+ Primary Insurance: Aetna Health Insurance
+ Emergency Contact: Michael Johnson (Spouse), +1-555-876-5432
+ Doctor Information
+ Doctor's Name: Dr. David Miller, M.D.
+ Specialty: Cardiology
+ Practice Name: Dallas Cardiac Care Center
+ Contact Number: +1-555-345-6789
+ Address: 321 Oak Avenue, Dallas, TX 75201
+ Observation Record
+ Visit Date: July 16, 2025
+ Chief Complaint: Shortness of breath, occasional chest pain, and fatigue.
+ History of Present Illness: Patient reports feeling short of breath with minimal exertion and occasional sharp chest pain radiating to the left arm. These symptoms have been gradually worsening over the past two weeks. Patient has a history of hypertension and hyperlipidemia. Family history of heart disease: Father had a heart attack at age 55.
+ Vital Signs
+ Blood Pressure: 145/90 mmHg
+ Heart Rate: 88 BPM
+ Temperature: 98.2°F
+ Respiratory Rate: 18 breaths per minute
+ Weight: 160 pounds
+ Height: 5 feet 5 inches
+ BMI: 26.6
+ Physical Examination
+ General Appearance: Anxious but alert and oriented.
+ Cardiac Exam: Regular rhythm, no murmurs heard, slight S4 gallop.
+ Respiratory Exam: Clear lung fields, no rales or wheezes.
+ Extremities: Mild bilateral lower extremity edema.
+ Abdomen: Soft, non-tender, no hepatosplenomegaly.
+ Diagnosis
+ Unstable Angina: I20.0
+ Hypertension: I10
+ Hyperlipidemia: I78.5
+ Plan
+ Patient is advised to rest and avoid strenuous activity.
+ Prescribe medications for blood pressure and cholesterol management.
+ Refer for further diagnostic testing, including stress echocardiogram and coronary angiography.
+ Follow up in one week for progress and review of test results.
+ Prescription (Rx)
+ Medication: Amlodipine
+ Dosage: Take 1 tablet by mouth once daily.
+ Duration: 30 days
+ Refills: 2
+ Medication: Atorvastatin 20 mg
+ Dosage: Take 1 tablet by mouth at bedtime.
+ Duration: 30 days
+ Refills: 2
+ Medication: Nitroglycerin 0.4 mg sublingual
+ Dosage: Place 1 tablet under the tongue at the onset of chest pain.
+ Duration: PRN
+ Refills: 0
+ Lab Requisition
+ Tests Ordered:
+ 1. Electrocardiogram (ECG)
+    Purpose: To check for any signs of ischemia or arrhythmias.
+    Priority: Urgent
+ 2. Echocardiogram
+    Purpose: To assess heart function, ejection fraction, and possible valve abnormalities.
+    Priority: Urgent
+ 3. Stress Test
+    Purpose: To evaluate the patient's cardiac response to exercise.
+    Priority: Routine
+ 4. Lipid Profile
+    Purpose: To assess cholesterol and lipid levels.
+    Priority: Routine
+ 5. High-Sensitivity C-Reactive Protein (hs-CRP)
+    Purpose: To assess for inflammation and cardiovascular risk.
+    Priority: Routine
+ Follow-up Instructions
+ Rest and avoid heavy physical activity until further testing is done.
+ Monitor blood pressure and cholesterol levels at home.
+ Follow up in one week to review test results and adjust treatment if needed.
+ Call the office immediately if symptoms of chest pain or shortness of breath worsen.
