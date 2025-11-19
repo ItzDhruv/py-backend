@@ -1,19 +1,16 @@
 from flask import Flask, request, jsonify
 import google.generativeai as genai
 from dotenv import load_dotenv
-import os, json, re
+import os, json, re, requests
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 app = Flask(__name__)
 
-def convert_textfile_to_patient_json(txt_path):
 
-    with open(txt_path, "r", encoding="utf-8") as f:
-        text = f.read()
+def convert_text_to_patient_json(text):
 
-    # --------------- UPDATED PROMPT -------------------
     prompt = f"""
 Extract patient medical data from the text below:
 {text}
@@ -38,7 +35,8 @@ Return ONLY valid JSON with this structure:
       "supplementName": "<string|null>"
     }}
   ],
-    "supplementName" [],
+  "supplementName": [],
+
   "bloodPressure": "<string|null>",
   "bloodPressureUnit": "<string|null>",
   "bodyTemperature": "<string|null>",
@@ -73,7 +71,6 @@ Rules:
 - If nothing found → empty arrays.
 - Use camelCase keys.
 """
-    # --------------------------------------------------
 
     model_ai = genai.GenerativeModel("gemini-2.5-flash")
     res = model_ai.generate_content(prompt)
@@ -84,9 +81,7 @@ Rules:
     data = json.loads(cleaned)
 
     # Ensure medicationList exists
-    meds = data.get("medicationList", [])
-    if meds is None:
-        meds = []
+    meds = data.get("medicationList", []) or []
     data["medicationList"] = meds
 
     # Ensure separate arrays exist
@@ -103,9 +98,7 @@ Rules:
         data["remarks"] = [m.get("remarks") for m in meds]
 
     # Ensure supplementList exists
-    sups = data.get("supplementList", [])
-    if sups is None:
-        sups = []
+    sups = data.get("supplementList", []) or []
     data["supplementList"] = sups
 
     return data
@@ -114,18 +107,20 @@ Rules:
 @app.route("/convert-text", methods=["POST"])
 def convert_text():
     try:
-        txt_path = request.args.get("file")
+        file_url = request.args.get("url")
 
-        if not txt_path:
-            return jsonify({"error": "file parameter missing"}), 400
+        if not file_url:
+            return jsonify({"error": "url parameter missing"}), 400
 
-        if txt_path.startswith("uploads/"):
-            txt_path = os.path.join(os.getcwd(), txt_path)
+        # Fetch remote text file
+        response = requests.get(file_url, timeout=10)
+        if response.status_code != 200:
+            return jsonify({"error": "Cannot download file", "status": response.status_code}), 400
 
-        if not os.path.exists(txt_path):
-            return jsonify({"error": f"File not found: {txt_path}"}), 404
+        text = response.text
 
-        result = convert_textfile_to_patient_json(txt_path)
+        # Parse using Gemini
+        result = convert_text_to_patient_json(text)
 
         return jsonify({"status": "success", "data": result})
 
