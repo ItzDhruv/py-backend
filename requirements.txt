@@ -1,3 +1,9 @@
 Flask
 python-dotenv
 google-generativeai
+pydub 
+openai-whisper 
+google-genai 
+pyngrok 
+more-itertools
+torch
